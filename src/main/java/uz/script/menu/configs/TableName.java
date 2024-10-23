@@ -1,6 +1,6 @@
 package uz.script.menu.configs;
 
-public interface TableName {
+public interface  TableName {
     String USERS = "_users";
     String ROLES = "roles";
     String RESTAURANTS = "restaurants";
@@ -8,4 +8,5 @@ public interface TableName {
     String CATEGORIES = "categories";
     String MENUS = "menus";
     String PRODUCTS = "products";
+
 }

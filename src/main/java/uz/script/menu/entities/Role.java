@@ -6,15 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import uz.script.menu.configs.TableName;
 
-@Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Table(name = TableName.ROLES)
-public class Role {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @Column(unique = true, nullable = false)
-    private String name;
+
+public enum Role {
+    ROLE_USER,
+    ROLE_ADMIN,
 }
