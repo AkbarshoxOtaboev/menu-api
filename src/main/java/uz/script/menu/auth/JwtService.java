@@ -1,4 +1,4 @@
-package uz.script.menu.services;
+package uz.script.menu.auth;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -122,7 +122,7 @@ public class JwtService {
                 .parser()
                 .setSigningKey(getSigningKey())
                 .build()
-                .parseEncryptedClaims(token)
+                .parseClaimsJws(token)
                 .getPayload();
     }
 
